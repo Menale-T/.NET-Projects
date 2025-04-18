@@ -1,0 +1,401 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SUP_INV1._0
+build_property.RootNamespace = SUP_INV1._0
+build_property.ProjectDir = C:\Users\user\source\repos\SUP-INV1.0\SUP-INV1.0\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\source\repos\SUP-INV1.0\SUP-INV1.0
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FARMPRODUCTSSALESRECORDs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFSTVBST0RVQ1RTU0FMRVNSRUNPUkRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FARMPRODUCTSSALESRECORDs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFSTVBST0RVQ1RTU0FMRVNSRUNPUkRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FARMPRODUCTSSALESRECORDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFSTVBST0RVQ1RTU0FMRVNSRUNPUkRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FARMPRODUCTSSALESRECORDs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFSTVBST0RVQ1RTU0FMRVNSRUNPUkRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FARMPRODUCTSSALESRECORDs/Forecast.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFSTVBST0RVQ1RTU0FMRVNSRUNPUkRzXEZvcmVjYXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FARMPRODUCTSSALESRECORDs/FPFutureDemandPredictioon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFSTVBST0RVQ1RTU0FMRVNSRUNPUkRzXEZQRnV0dXJlRGVtYW5kUHJlZGljdGlvb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FARMPRODUCTSSALESRECORDs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFSTVBST0RVQ1RTU0FMRVNSRUNPUkRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FARMPRODUCTSSALESRECORDs/PreviewData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFSTVBST0RVQ1RTU0FMRVNSRUNPUkRzXFByZXZpZXdEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/DeleteRequiredAmount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXERlbGV0ZVJlcXVpcmVkQW1vdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/FPAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXEZQQW5hbHlzaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/SearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXFNlYXJjaEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/FarmProducts/SearchResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVByb2R1Y3RzXFNlYXJjaFJlc3VsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/OTHERSSALESRECORDs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1RIRVJTU0FMRVNSRUNPUkRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/OTHERSSALESRECORDs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1RIRVJTU0FMRVNSRUNPUkRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/OTHERSSALESRECORDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1RIRVJTU0FMRVNSRUNPUkRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/OTHERSSALESRECORDs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1RIRVJTU0FMRVNSRUNPUkRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/OTHERSSALESRECORDs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1RIRVJTU0FMRVNSRUNPUkRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/OTHERSSALESRECORDs/OTFutureDemandPrediction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1RIRVJTU0FMRVNSRUNPUkRzXE9URnV0dXJlRGVtYW5kUHJlZGljdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/DeleteRequiredQuantity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXERlbGV0ZVJlcXVpcmVkUXVhbnRpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/OtAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXE90QW5hbHlzaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/SearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXFNlYXJjaEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Others/SearchResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXFNlYXJjaFJlc3VsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PACKEDFOODSSALESRECORDs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEFDS0VERk9PRFNTQUxFU1JFQ09SRHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PACKEDFOODSSALESRECORDs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEFDS0VERk9PRFNTQUxFU1JFQ09SRHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PACKEDFOODSSALESRECORDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEFDS0VERk9PRFNTQUxFU1JFQ09SRHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PACKEDFOODSSALESRECORDs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEFDS0VERk9PRFNTQUxFU1JFQ09SRHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PACKEDFOODSSALESRECORDs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEFDS0VERk9PRFNTQUxFU1JFQ09SRHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PACKEDFOODSSALESRECORDs/PAFutureDemandPrediction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEFDS0VERk9PRFNTQUxFU1JFQ09SRHNcUEFGdXR1cmVEZW1hbmRQcmVkaWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/DeleteRequiredQuantity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcRGVsZXRlUmVxdWlyZWRRdWFudGl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/PFAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcUEZBbmFseXNpcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/SearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcU2VhcmNoRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PackedFoods/SearchResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2VkRm9vZHNcU2VhcmNoUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PHARMACEUTICALSSALESRECORDs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEhBUk1BQ0VVVElDQUxTU0FMRVNSRUNPUkRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PHARMACEUTICALSSALESRECORDs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEhBUk1BQ0VVVElDQUxTU0FMRVNSRUNPUkRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PHARMACEUTICALSSALESRECORDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEhBUk1BQ0VVVElDQUxTU0FMRVNSRUNPUkRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PHARMACEUTICALSSALESRECORDs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEhBUk1BQ0VVVElDQUxTU0FMRVNSRUNPUkRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PHARMACEUTICALSSALESRECORDs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEhBUk1BQ0VVVElDQUxTU0FMRVNSRUNPUkRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PHARMACEUTICALSSALESRECORDs/PHAFutureDemandPrediction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUEhBUk1BQ0VVVElDQUxTU0FMRVNSRUNPUkRzXFBIQUZ1dHVyZURlbWFuZFByZWRpY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/DeleteRequiredQuantity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXERlbGV0ZVJlcXVpcmVkUXVhbnRpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/PhaAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXFBoYUFuYWx5c2lzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/SearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXFNlYXJjaEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Pharmaceuticals/SearchResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY2V1dGljYWxzXFNlYXJjaFJlc3VsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PREPAREDRECORDs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUFJFUEFSRURSRUNPUkRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PREPAREDRECORDs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUFJFUEFSRURSRUNPUkRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PREPAREDRECORDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUFJFUEFSRURSRUNPUkRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PREPAREDRECORDs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUFJFUEFSRURSRUNPUkRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PREPAREDRECORDs/Forcast.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUFJFUEFSRURSRUNPUkRzXEZvcmNhc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PREPAREDRECORDs/GetInput.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUFJFUEFSRURSRUNPUkRzXEdldElucHV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/PREPAREDRECORDs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUFJFUEFSRURSRUNPUkRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/TOOLSSALESRECORDs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9PTFNTQUxFU1JFQ09SRHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/TOOLSSALESRECORDs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9PTFNTQUxFU1JFQ09SRHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/TOOLSSALESRECORDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9PTFNTQUxFU1JFQ09SRHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/TOOLSSALESRECORDs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9PTFNTQUxFU1JFQ09SRHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/TOOLSSALESRECORDs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9PTFNTQUxFU1JFQ09SRHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/TOOLSSALESRECORDs/TFutureDemandPrediction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE9PTFNTQUxFU1JFQ09SRHNcVEZ1dHVyZURlbWFuZFByZWRpY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/DeleteRequiredQuantity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcRGVsZXRlUmVxdWlyZWRRdWFudGl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/SearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcU2VhcmNoRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/SearchResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcU2VhcmNoUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Tools/TAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9vbHNcVEFuYWx5c2lzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/SUP-INV1.0/SUP-INV1.0/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-js7acxcff0
