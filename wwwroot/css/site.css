@@ -1,0 +1,181 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+
+    .sidebar.collapsed {
+        width: 0;
+        overflow: hidden;
+    }
+
+    .sidebar .components {
+        padding: 0;
+    }
+
+        .sidebar .components li {
+            padding: 10px;
+            font-size: large;
+            text-align: center;
+            border-block-color: gray;
+        }
+
+            .sidebar .components li a {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                border-block-color: gray;
+            }
+
+    .sidebar .dropdown-toggle::after {
+        content: '\f0dd';
+        font-family: 'FontAwesome';
+        margin-left: 10px;
+    }
+
+#content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s;
+}
+
+.btn-primary {
+    margin: 10px;
+}
+/* Adjust content margin when sidebar is collapsed */
+
+.sidebar.collapsed ~ #content {
+    margin-left: 0;
+    width: 100%;
+}
+
+#chart-container {
+    width: 600px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    margin: 20px auto; /* Center the chart and add margins */
+}
+
+/* Styles for the canvas element (optional) */
+#mostSoldChart {
+    width: 100%; /* Make the canvas take up the full width of the container */
+    height: 100%; /* Make the canvas take up the full height of the container */
+}
+
+
+
+
+.container {
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow columns to wrap onto new lines on smaller screens */
+    width: 100%; /* Adjust container width as needed */
+    margin: 1px auto; /* Center the container horizontally */
+    border: 1px solid #ddd; /* Add a border to the container */
+    border-radius: 5px; /* Round the corners of the container's border */
+}
+
+.column {
+    flex: 1; /* Each column takes equal width */
+    padding: 10px; /* Add some padding */
+    box-sizing: content-box; /* Include padding in the element's total width */
+    border-right: 5px solid #ccc; /* Add a border to the right of each column */
+    border-radius: 5px; /* Round the corners of each column */
+    border-bottom: 5px solid #ccc;
+}
+
+/* Optional: Responsive behavior */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .column {
+        flex-basis: 100%; /* Stack columns vertically on smaller screens */
+    }
+}
+
+
+
+
+
+.Col-FP-Calc-0 {
+    flex: 1; /* Each column takes equal width */
+    padding: 10px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    background-color: plum;
+}
+
+/* Optional: Responsive behavior */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .Col-FP-Calc-0 {
+        flex-basis: 100%; /* Stack columns vertically on smaller screens */
+    }
+}
+
+
+
+
+.cont-FP-Calc {
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow columns to wrap onto new lines on smaller screens */
+    background-color: lightblue;
+    width: 100%; /* Adjust container width as needed */
+    margin: 20px auto; /* Center the container horizontally */
+    border: 1px solid #ddd; /* Add a border to the container */
+    border-radius: 5px; /* Round the corners of the container's border */
+}
+
+.Col-FP-Calc-1 {
+    flex: 1; /* Each column takes equal width */
+    padding: 10px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    background-color: green
+}
+
+/* Optional: Responsive behavior */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .Col-FP-Calc-1 {
+        flex-basis: 100%; /* Stack columns vertically on smaller screens */
+    }
+}
+
+.Col-FP-Calc-2 {
+    flex: 1; /* Each column takes equal width */
+    padding: 10px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    background-color: limegreen
+}
+
+/* Optional: Responsive behavior */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .Col-FP-Calc-2 {
+        flex-basis: 100%; /* Stack columns vertically on smaller screens */
+    }
+}
