@@ -1,0 +1,68 @@
+﻿@model SUP_INV1._0.Models.PACKEDFOODSSALESRECORD
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>PACKEDFOODSSALESRECORD</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ItemID" class="control-label"></label>
+                <input asp-for="ItemID" class="form-control" />
+                <span asp-validation-for="ItemID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PARecName" class="control-label"></label>
+                <input asp-for="PARecName" class="form-control" />
+                <span asp-validation-for="PARecName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PARecSoldQuantity" class="control-label"></label>
+                <input asp-for="PARecSoldQuantity" class="form-control" />
+                <span asp-validation-for="PARecSoldQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PARecDescription" class="control-label"></label>
+                <input asp-for="PARecDescription" class="form-control" />
+                <span asp-validation-for="PARecDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PARecStockInPrice" class="control-label"></label>
+                <input asp-for="PARecStockInPrice" class="form-control" />
+                <span asp-validation-for="PARecStockInPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PARecStockOutPrice" class="control-label"></label>
+                <input asp-for="PARecStockOutPrice" class="form-control" />
+                <span asp-validation-for="PARecStockOutPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PARecDateSold" class="control-label"></label>
+                <input asp-for="PARecDateSold" class="form-control" />
+                <span asp-validation-for="PARecDateSold" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PARecSupplierEmail" class="control-label"></label>
+                <input asp-for="PARecSupplierEmail" class="form-control" />
+                <span asp-validation-for="PARecSupplierEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

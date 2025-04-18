@@ -1,0 +1,33 @@
+﻿@model List<Dictionary<string, object>>
+
+
+<h2>Data Preview</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+          @if (Model.Any())
+            {
+                @foreach (var key in Model.First().Keys)
+                {
+                    <th>@key</th>
+                }
+            }
+        
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model)
+        {
+            <tr>
+                @foreach (var value in row.Values)
+                {
+                    <td>@value</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Forecast">Forecast</a> 
+<a asp-action="FPFutureDemandPredictioon">Back</a>

@@ -1,0 +1,69 @@
+﻿@model SUP_INV1._0.Models.OTHERSSALESRECORD
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>OTHERSSALESRECORD</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="OTHRecID" />
+            <div class="form-group">
+                <label asp-for="ItemID" class="control-label"></label>
+                <input asp-for="ItemID" class="form-control" />
+                <span asp-validation-for="ItemID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OTHRecName" class="control-label"></label>
+                <input asp-for="OTHRecName" class="form-control" />
+                <span asp-validation-for="OTHRecName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OTHRecSoldQuantity" class="control-label"></label>
+                <input asp-for="OTHRecSoldQuantity" class="form-control" />
+                <span asp-validation-for="OTHRecSoldQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OTHRecDescription" class="control-label"></label>
+                <input asp-for="OTHRecDescription" class="form-control" />
+                <span asp-validation-for="OTHRecDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OTHRecStockInPrice" class="control-label"></label>
+                <input asp-for="OTHRecStockInPrice" class="form-control" />
+                <span asp-validation-for="OTHRecStockInPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OTHRecStockOutPrice" class="control-label"></label>
+                <input asp-for="OTHRecStockOutPrice" class="form-control" />
+                <span asp-validation-for="OTHRecStockOutPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OTHRecDateSold" class="control-label"></label>
+                <input asp-for="OTHRecDateSold" class="form-control" />
+                <span asp-validation-for="OTHRecDateSold" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OTHRecSupplierEmail" class="control-label"></label>
+                <input asp-for="OTHRecSupplierEmail" class="form-control" />
+                <span asp-validation-for="OTHRecSupplierEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

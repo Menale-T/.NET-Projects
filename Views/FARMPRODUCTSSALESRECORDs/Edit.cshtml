@@ -1,0 +1,69 @@
+﻿@model SUP_INV1._0.Models.FARMPRODUCTSSALESRECORD
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>FARMPRODUCTSSALESRECORD</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FPRecID" />
+            <div class="form-group">
+                <label asp-for="ItemID" class="control-label"></label>
+                <input asp-for="ItemID" class="form-control" />
+                <span asp-validation-for="ItemID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPRecName" class="control-label"></label>
+                <input asp-for="FPRecName" class="form-control" />
+                <span asp-validation-for="FPRecName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPRecSoldAmount" class="control-label"></label>
+                <input asp-for="FPRecSoldAmount" class="form-control" />
+                <span asp-validation-for="FPRecSoldAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPRecDescription" class="control-label"></label>
+                <input asp-for="FPRecDescription" class="form-control" />
+                <span asp-validation-for="FPRecDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPRecStockInPrice" class="control-label"></label>
+                <input asp-for="FPRecStockInPrice" class="form-control" />
+                <span asp-validation-for="FPRecStockInPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPRecStockOutPrice" class="control-label"></label>
+                <input asp-for="FPRecStockOutPrice" class="form-control" />
+                <span asp-validation-for="FPRecStockOutPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPRecDateSold" class="control-label"></label>
+                <input asp-for="FPRecDateSold" class="form-control" />
+                <span asp-validation-for="FPRecDateSold" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FPRecSupplierEmail" class="control-label"></label>
+                <input asp-for="FPRecSupplierEmail" class="form-control" />
+                <span asp-validation-for="FPRecSupplierEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

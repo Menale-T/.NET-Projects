@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SUP_INV1._0.Models.PACKEDFOODSSALESRECORD>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PARecName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PARecSoldQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PARecDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PARecStockInPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PARecStockOutPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PARecDateSold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PARecSupplierEmail)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARecName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARecSoldQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARecDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARecStockInPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARecStockOutPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARecDateSold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARecSupplierEmail)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PARecID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PARecID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PARecID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

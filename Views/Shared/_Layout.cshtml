@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SUP_INV_1._0</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SUP_INV_1._0.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<header>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                </ul>
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+
+    <div class="wrapper">
+        <nav id="sidebar" class="sidebar">
+            <button id="sidebarCollapse" class="btn btn-primary">Toggle Sidebar</button>
+            <ul class="list-unstyled components">
+
+
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+
+                <li class="active">
+
+
+                    <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Adminstrator</a>
+                    <ul class="collapse list-unstyled" id="adminSubmenu">
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="InventoryAnalysis">Inventory Analysis</a>
+                        </li>
+
+                        <li>
+                            <a asp-area="Identity" asp-page="/Account/Register">Register Users</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="active">
+
+
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Register Item</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a asp-area="" asp-controller="FarmProducts" asp-action="Index">FarmProducts</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="PackedFoods" asp-action="Index">PackedFoods</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Pharmaceuticals" asp-action="Index">Pharmaceuticals</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Tools" asp-action="Index">Tools</a>
+                        </li>
+
+                        <li>
+                            <a asp-area="" asp-controller="Others" asp-action="Index">Others</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#servicesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Remove Item</a>
+                    <ul class="collapse list-unstyled" id="servicesSubmenu">
+                        <li>
+                            <a asp-area="" asp-controller="FarmProducts" asp-action="SearchForm">FarmProducts</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="PackedFoods" asp-action="SearchForm">PackedFoods</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Pharmaceuticals" asp-action="SearchForm">Pharmaceuticals</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Tools" asp-action="SearchForm">Tools</a>
+                        </li>
+
+                        <li>
+                            <a asp-area="" asp-controller="Others" asp-action="SearchForm">Others</a>
+                        </li>
+                    </ul>
+                </li>
+                
+        </nav>
+        <div id="content">
+            @RenderBody()
+            @await RenderSectionAsync("Scripts", required: false)
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+
+</body>
+
+<style>
+    .navbar {
+        background-color: greenyellow;
+    }
+</style>
+
+</html>

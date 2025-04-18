@@ -1,0 +1,627 @@
+﻿@model SUP_INV1._0.ViewModel.ViewModel1
+
+<div class="cont-FP-Calc">
+    <h3>
+        Farm Products Category Current Status
+    </h3>
+</div>
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-0">
+        <ul>
+
+            <h4>
+                Total Number Of Records:@Model.TotNumItemsFp     Different Items Are Recorded
+            </h4>
+
+
+            <h4>
+                Total Amount Of Items: @Model.TotalAmountFp Kilograms   OF Total Amount Recorded
+            </h4>
+
+            <h4>
+                Total Stock In Price Of Items: @Model.TotalStInPriceFp    Birr
+            </h4>
+
+            <h4>
+                Total Stock Out Price Of Items:@Model.TotalStOPriceFp     Birr
+            </h4>
+
+            <h4>
+                The Net Income From This Category Is Expected To Be: @Model.Income    Birr
+            </h4>
+
+        </ul>
+    </div>
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+        </ul>
+    </div>
+</div>
+<div class="cont-FP-Calc">
+    <h3>
+        Today's Sold Items
+    </h3>
+</div>
+
+
+<div class="cont-FP-Calc">
+
+    <div class="Col-FP-Calc-0">
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FpSoldItemsToday)
+                {
+                    <tr>
+
+                        <td>@item.ProNameToday</td>
+                        <td>@item.TotQuaSoldToday</td>
+                        <td>@item.StockinpriceToday</td>
+                        <td>@item.StockoutpriceToday</td>
+                        <td>@item.NetIncomeFpToday</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="cont-FP-Calc">
+    <h3>
+        Sales Report
+    </h3>
+</div>
+
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-1">
+        <h2>Most Sold Items</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.MostSoldItems)
+                {
+                    <tr>
+
+                        <td>@item.ProName</td>
+                        <td>@item.TotQuaSold</td>
+                        <td>@item.TotStockinprice</td>
+                        <td>@item.TotStockoutprice</td>
+                        <td>@item.NetIncomeFp</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="Col-FP-Calc-2">
+        <h2>Most Sold Items In The Last Day</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.MostSoldItemsPreDay)
+                {
+                    <tr>
+
+                        <td>@item.ProNamePreDay</td>
+                        <td>@item.TotQuaSoldPreDay</td>
+                        <td>@item.StockinpricePreDay</td>
+                        <td>@item.StockoutpricePreDay</td>
+                        <td>@item.NetIncomeFpPreDay</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+</div>
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-1">
+        <h2>Most Sold Items In The Last Week</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FpMostSoldItemsPreWeek)
+                {
+                    <tr>
+
+                        <td>@item.ProNamePreWeek</td>
+                        <td>@item.TotQuaSoldPreWeek</td>
+                        <td>@item.StockinpricePreWeek</td>
+                        <td>@item.StockoutpricePreWeek</td>
+                        <td>@item.NetIncomeFpPreWeek</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="Col-FP-Calc-2">
+        <h2>Most Sold Items In The Last Two Weeks</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FpMostSoldItemsPreTwoWeeks)
+                {
+                    <tr>
+
+                        <td>@item.ProNamePreTwoWeeks</td>
+                        <td>@item.TotQuaSoldPreTwoWeeks</td>
+                        <td>@item.StockinpricePreTwoWeeks</td>
+                        <td>@item.StockoutpricePreTwoWeeks</td>
+                        <td>@item.NetIncomeFpPreTwoWeeks</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-1">
+        <h2>Most Sold Items In The Last Three Weeks</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FpMostSoldItemsPreThreeWeeks)
+                {
+                    <tr>
+
+                        <td>@item.ProNamePreThreeWeeks</td>
+                        <td>@item.TotQuaSoldPreThreeWeeks</td>
+                        <td>@item.StockinpricePreThreeWeeks</td>
+                        <td>@item.StockoutpricePreThreeWeeks</td>
+                        <td>@item.NetIncomeFpPreThreeWeeks</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="Col-FP-Calc-2">
+        <h2>Most Sold Items In The Last Month</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FpMostSoldItemsPreMonth)
+                {
+                    <tr>
+
+                        <td>@item.ProNamePreMonth</td>
+                        <td>@item.TotQuaSoldPreMonth</td>
+                        <td>@item.StockinpricePreMonth</td>
+                        <td>@item.StockoutpricePreMonth</td>
+                        <td>@item.NetIncomeFpPreMonth</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="cont-FP-Calc">
+
+    <h3>
+        Financial Sales Report
+    </h3>
+
+</div>
+
+<div class="cont-FP-Calc">
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+            <h3>
+                Total Amounts Sold
+            </h3>
+            <h5>
+                Today:@Model.TotalAmountSoldToday
+            </h5>
+
+            <h5>
+                In The Previous Day: @Model.TotalAmountSoldYesterday
+            </h5>
+
+            <h5>
+                In The Previous Week:@Model.TotalAmountSoldPastWeek
+            </h5>
+
+            <h5>
+                In The Previous Two Weeks:@Model.TotalAmountSoldPastTwoWeeks
+            </h5>
+
+            <h5>
+                In The Previous Three Weeks:@Model.TotalAmountSoldPastThreeWeeks
+            </h5>
+
+            <h5>
+                In The Previous Month:@Model.TotalAmountSoldPastMonth
+            </h5>
+        </ul>
+    </div>
+
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+            <h3>
+                Total Stock In Price Of Sold Items
+            </h3>
+
+            <h5>
+                Today:@Model.TotalStockInPriceOfItemsSoldToday
+            </h5>
+
+            <h5>
+                Previous Day:@Model.TotalStockInPriceOfItemsSoldYesterday
+            </h5>
+
+            <h5>
+                Previous Week:@Model.TotalStockInPriceOfItemsSoldLastWeek
+            </h5>
+
+            <h5>
+                Previous Two Weeks:@Model.TotalStockInPriceOfItemsSoldLastTwoWeeks
+            </h5>
+
+            <h5>
+                Previous Three Weeks:@Model.TotalStockInPriceOfItemsSoldLastThreeWeeks
+            </h5>
+
+            <h5>
+                Previous Month:@Model.TotalStockInPriceOfItemsSoldLastMonth
+            </h5>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="cont-FP-Calc">
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+            <h3>
+                Total Stock Out Price Of Sold Items
+            </h3>
+
+            <h5>
+                Today:@Model.TotalStockOutPriceOfItemsSoldToday
+            </h5>
+
+            <h5>
+                Previous Day:@Model.TotalStockOutPriceOfItemsSoldYesterday
+            </h5>
+
+            <h5>
+                Previous Week:@Model.TotalStockOutPriceOfItemsSoldLastWeek
+            </h5>
+
+            <h5>
+                Previous Two Weeks:@Model.TotalStockOutPriceOfItemsSoldLastTwoWeeks
+            </h5>
+
+            <h5>
+                Previous Three Weeks:@Model.TotalStockOutPriceOfItemsSoldLastThreeWeeks
+            </h5>
+
+            <h5>
+                Previous Month:@Model.TotalStockOutPriceOfItemsSoldLastMonth
+            </h5>
+        </ul>
+    </div>
+
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+            <h3>
+                Total Income Of Items Sold
+            </h3>
+
+            <h5>
+                Today:@Model.TotalIncomeOfItemsSoldToday
+            </h5>
+
+            <h5>
+                Previous Day:@Model.TotalIncomeOfItemsSoldYesterday
+            </h5>
+
+            <h5>
+                Previous Week:@Model.TotalIncomeOfItemsSoldLastWeek
+            </h5>
+
+            <h5>
+                Previous Two Weeks:@Model.TotalIncomeOfItemsSoldLastTwoWeeks
+            </h5>
+
+            <h5>
+                Previous Three Weeks:@Model.TotalIncomeOfItemsSoldLastThreeWeeks
+            </h5>
+
+            <h5>
+                Previous Month:@Model.TotalIncomeOfItemsSoldLastMonth
+            </h5>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="column">
+        <div id="chart-container">
+            <canvas id="mostSoldChart"></canvas>
+        </div>
+
+    </div>
+    <div class="column">
+        <div id="chart-container2">
+            <canvas id="mostSoldChart2"></canvas>
+        </div>
+        <h2>Column 2</h2>
+        <p>Some text for column 2.</p>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<script>
+    const ctx = document.getElementById('mostSoldChart').getContext('2d');
+    const data = {
+        labels: @Html.Raw(Json.Serialize(Model.MostSoldItemsPreDay.Select(x => x.ProNamePreDay).ToArray())),
+        datasets: [{
+            data: @Html.Raw(Json.Serialize(Model.MostSoldItemsPreDay.Select(x => x.TotQuaSoldPreDay).ToArray())),
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(255, 159, 64, 0.8)'
+                // Add more colors as needed
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const config = {
+        type: 'pie',
+        data: data,
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Most Sold Items Yesterday'
+                },
+                legend: {
+                    display: true,
+                    position: 'bottom' //Place legend at the bottom
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            let label = context.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.y !== null) {
+                                label += context.parsed.y + ' (' + context.parsed.percentage.toFixed(2) + '%)';
+                            }
+                            return label;
+                        }
+                    }
+                }
+
+            },
+            maintainAspectRatio: false
+        }
+    };
+
+    new Chart(ctx, config);
+
+</script>
+
+
+
+
+<h2>Transaction Summary</h2>
+
+
+<form method="post">
+    <label for="selectedDate">Select Date:</label>
+    <select id="selectedDate" name="selectedDate">
+    </select>
+    <button type="submit">Get Total</button>
+</form>
+
+<div class="cont-FP-Calc">
+
+    <h3>
+        Items Passed Maximum Shelf Life
+    </h3>
+
+</div>
+
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-0">
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity </th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FpItemPassedMaxShelfLife)
+                {
+                    <tr>
+
+                        <td>@item.ItemNameFpMaxSh</td>
+                        <td>@item.ItemAmountFpMaxSh</td>
+                        <td>@item.ItemStockinpriceFpMaxSh</td>
+                        <td>@item.ItemStockoutpriceFpMaxSh</td>
+                        <td>@item.ItemNetIncomeFpMaxSh</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="cont-FP-Calc">
+
+    <h3>
+        Sold Out Items
+    </h3>
+
+</div>
+
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-0">
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity </th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FpSoldOutItems)
+                {
+                    <tr>
+
+                        <td>@item.ItemNameSoldout</td>
+                        <td>@item.ItemAmountSoldout</td>
+                        <td>@item.ItemStockinpriceSoldout</td>
+                        <td>@item.ItemStockoutpriceSoldout</td>
+                        <td>@item.ItemNetIncomeSoldout</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+<style>
+    body {
+        background-image: url('../images/inv background.jpg');
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+

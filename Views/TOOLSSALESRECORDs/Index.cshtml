@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SUP_INV1._0.Models.TOOLSSALESRECORD>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TOOLSRecName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TOOLSRecSoldQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TOOLSRecDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TOOLSRecStockInPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TOOLSRecStockOutPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TOOLSRecDateSold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TOOLSRecSupplierEmail)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOOLSRecName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOOLSRecSoldQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOOLSRecDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOOLSRecStockInPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOOLSRecStockOutPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOOLSRecDateSold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOOLSRecSupplierEmail)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TOOLSRecID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TOOLSRecID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TOOLSRecID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

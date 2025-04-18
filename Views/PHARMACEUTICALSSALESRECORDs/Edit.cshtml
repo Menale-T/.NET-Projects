@@ -1,0 +1,69 @@
+﻿@model SUP_INV1._0.Models.PHARMACEUTICALSSALESRECORD
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>PHARMACEUTICALSSALESRECORD</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PHARecID" />
+            <div class="form-group">
+                <label asp-for="ItemID" class="control-label"></label>
+                <input asp-for="ItemID" class="form-control" />
+                <span asp-validation-for="ItemID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHARecName" class="control-label"></label>
+                <input asp-for="PHARecName" class="form-control" />
+                <span asp-validation-for="PHARecName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHARecSoldQuantity" class="control-label"></label>
+                <input asp-for="PHARecSoldQuantity" class="form-control" />
+                <span asp-validation-for="PHARecSoldQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHARecDescription" class="control-label"></label>
+                <input asp-for="PHARecDescription" class="form-control" />
+                <span asp-validation-for="PHARecDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHARecStockInPrice" class="control-label"></label>
+                <input asp-for="PHARecStockInPrice" class="form-control" />
+                <span asp-validation-for="PHARecStockInPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHARecStockOutPrice" class="control-label"></label>
+                <input asp-for="PHARecStockOutPrice" class="form-control" />
+                <span asp-validation-for="PHARecStockOutPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHARecDateSold" class="control-label"></label>
+                <input asp-for="PHARecDateSold" class="form-control" />
+                <span asp-validation-for="PHARecDateSold" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHARecSupplierEmail" class="control-label"></label>
+                <input asp-for="PHARecSupplierEmail" class="form-control" />
+                <span asp-validation-for="PHARecSupplierEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

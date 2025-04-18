@@ -1,0 +1,358 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div id="expired-items-notification1" style="display:none;">
+    <a asp-area="" asp-controller="PackedFoods" asp-action="PFAnalysis">There are expired items In Packed Foods Category</a>
+</div>
+<div id="expired-items-notification2" style="display:none;">
+    <a asp-area="" asp-controller="Pharmaceuticals" asp-action="PhaAnalysis">There are expired items In Pharmaceuticals Category</a>
+</div>
+<div id="expired-items-notification3" style="display:none;">
+    <a asp-area="" asp-controller="Others" asp-action="OtAnalysis">There are expired items In Others Category</a>
+</div>
+<div id="expired-items-notification4" style="display:none;">
+    <a asp-area="" asp-controller="FarmProducts" asp-action="FPAnalysis">There are items passing Shelf life In Farm Products category</a>
+</div>
+
+
+<div class="text-center">
+    <h1 class="display-4">Inventory Actions</h1>
+
+</div>
+
+<div class="dropdown">
+    <span>Inventory Analysis</span>
+    <div class="dropdown-content">
+        <ul>
+            <a class="op" asp-area="" asp-controller="FarmProducts" asp-action="FPAnalysis">
+                Farm Products Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="PackedFoods" asp-action="PFAnalysis">
+                Packed Foods Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Pharmaceuticals" asp-action="PhaAnalysis">
+                Pharmaceuticals Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Tools" asp-action="TAnalysis">
+                Tools Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Others" asp-action="OtAnalysis">
+                Others
+
+            </a>
+        </ul>
+    </div>
+</div>
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin: 35px; /* Adds spacing between elements */
+        padding: 30px;
+        background-color:yellowgreen;
+        border-radius: 20px; /* Smooth rounded edges */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        font-family: "Arial", sans-serif; /* Ensures a clean and professional look */
+        font-size: 30px; /* Adjusted for better readability */
+        font-weight: 600; /* Makes text slightly bold */
+    }
+
+        .dropdown:hover {
+            transform: scale(1.05); /* Slight zoom-in effect */
+            background-color: #e2e6ea;
+        }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 220px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .op {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        padding: 8px;
+        display: block;
+        transition: color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+    }
+
+        .op:hover {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+</style>
+
+
+
+
+
+<div class="dropdown">
+    <span>Reports</span>
+    <div class="dropdown-content">
+        <ul>
+            <a class="op" asp-area="" asp-controller="FarmProducts" asp-action="FPAnalysis">
+                Farm Products Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="PackedFoods" asp-action="PFAnalysis">
+                Packed Foods Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Pharmaceuticals" asp-action="PhaAnalysis">
+                Pharmaceuticals Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Tools" asp-action="TAnalysis">
+                Tools Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Others" asp-action="OtAnalysis">
+                Others
+
+            </a>
+        </ul>
+    </div>
+</div>
+
+
+<div class="dropdown">
+    <span>Charts</span>
+    <div class="dropdown-content">
+        <ul>
+            <a class="op" asp-area="" asp-controller="FarmProducts" asp-action="FPAnalysis">
+                Farm Products Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="PackedFoods" asp-action="PFAnalysis">
+                Packed Foods Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Pharmaceuticals" asp-action="PhaAnalysis">
+                Pharmaceuticals Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Tools" asp-action="TAnalysis">
+                Tools Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="Others" asp-action="OtAnalysis">
+                Others
+
+            </a>
+        </ul>
+    </div>
+</div>
+
+
+<div class="dropdown">
+    <span>Future Demand</span>
+    <div class="dropdown-content">
+        <ul>
+            <a class="op" asp-area="" asp-controller="PREPAREDRECORDs" asp-action="GetInput">
+                Farm Products Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="PACKEDFOODSSALESRECORDs" asp-action="PAFutureDemandPrediction">
+                Packed Foods Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="PHARMACEUTICALSSALESRECORDs" asp-action="PHAFutureDemandPrediction">
+                Pharmaceuticals Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="TOOLSSALESRECORDs" asp-action="TFutureDemandPrediction">
+                Tools Category
+
+            </a>
+        </ul>
+        <ul>
+            <a class="op" asp-area="" asp-controller="OTHERSSALESRECORDs" asp-action="OTFutureDemandPrediction">
+                Others
+
+            </a>
+        </ul>
+    </div>
+</div>
+<div class="dropdown">
+    <span>Show transaction Table</span>
+    <div class="dropdown-content">
+        <ul>
+           <a  asp-area="" asp-controller="FARMPRODUCTSSALESRECORDs" asp-action="Index" >Transaction Table FarmProducts</a>
+        </ul>
+        <ul>
+           <a  asp-area="" asp-controller="PACKEDFOODSSALESRECORDs" asp-action="Index" >Transaction Table PackedFoods</a>
+        </ul>
+        <ul>
+           <a  asp-area="" asp-controller="PHARMACEUTICALSSALESRECORDs" asp-action="Index" >Transaction Table Pharmaceuticals</a>
+        </ul>
+            <ul>
+           <a asp-area="" asp-controller="TOOLSSALESRECORDs" asp-action="Index">Transaction Table Tools</a>
+        </ul>
+                <ul>
+           <a asp-area="" asp-controller="OTHERSSALESRECORDs" asp-action="Index">Transaction Table Others</a>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+@section Scripts {
+            <script>
+                $(document).ready(function () { 
+                    $.ajax({ 
+                        url: '@Url.Action("CheckExpiredItems", "PackedFoods")', 
+                        type: 'GET', success: function (data) { 
+                        if (data.count > 0) { $('#expired-items-notification1').show(); 
+                        } },
+                        error: function () { 
+                            console.error('Error checking expired items.'); 
+                        }
+                    });
+                });
+            </script>
+
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: '@Url.Action("CheckExpiredItems", "Pharmaceuticals")',
+                    type: 'GET', success: function (data) {
+                        if (data.count > 0) {
+                            $('#expired-items-notification2').show();
+
+                        }
+                    },
+                    error: function () {
+                        console.error('Error checking expired items.');
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: '@Url.Action("CheckExpiredItems", "Others")',
+                    type: 'GET', success: function (data) {
+                        if (data.count > 0) {
+                            $('#expired-items-notification3').show();
+                        }
+                    },
+                    error: function () {
+                        console.error('Error checking expired items.');
+                    }
+                });
+            });
+        </script>
+
+
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: '@Url.Action("CheckItemsPassedShelfLife", "FarmProducts")',
+                    type: 'GET', success: function (data) {
+                        if (data.count > 0) {
+                            $('#expired-items-notification4').show();
+                        }
+                    },
+                    error: function () {
+                        console.error('Error checking expired items.');
+                    }
+                });
+            });
+        </script>
+}
+
+
+
+
+    <style>
+    body {
+
+        background-image: url('../images/inv background.jpg');
+    }
+    #expired-items-notification1 {
+
+        background-color:red;
+        color:black;
+        padding: 5px;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+    }
+
+    #expired-items-notification2 {
+        background-color: red;
+        color: black;
+        padding: 5px;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+    }
+
+    #expired-items-notification3 {
+        background-color: red;
+        color: black;
+        padding: 5px;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+    }
+
+    #expired-items-notification4 {
+        background-color: red;
+        color: black;
+        padding: 5px;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+    }
+    </style>

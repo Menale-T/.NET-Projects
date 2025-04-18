@@ -1,0 +1,625 @@
+﻿@model SUP_INV1._0.ViewModel.ViewModel1
+
+<div class="cont-FP-Calc">
+    <h3>
+        Pharmaceuticals Category Current Status
+    </h3>
+</div>
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-0">
+        <ul>
+
+            <h4>
+                Total Number Of Records:@Model.TotNumItemsPHA     Different Items Are Recorded
+            </h4>
+
+
+            <h4>
+                Total Amount Of Items: @Model.TotQuantityOfItemsPHA    OF Total Amount Recorded
+            </h4>
+
+            <h4>
+                Total Stock In Price Of Items: @Model.TotalStInPricePHA    Birr
+            </h4>
+
+            <h4>
+                Total Stock Out Price Of Items:@Model.TotalStOPricePHA     Birr
+            </h4>
+
+            <h4>
+                The Net Income From This Category Is Expected To Be: @Model.NetIncomePHA    Birr
+            </h4>
+
+        </ul>
+    </div>
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+        </ul>
+    </div>
+</div>
+<div class="cont-FP-Calc">
+    <h3>
+        Today's Sold Items
+    </h3>
+</div>
+
+
+<div class="cont-FP-Calc">
+
+    <div class="Col-FP-Calc-0">
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHASoldItemsToday)
+                {
+                    <tr>
+
+                        <td>@item.PHAProNameToday</td>
+                        <td>@item.PHATotQuaSoldToday</td>
+                        <td>@item.PHAStockinpriceToday</td>
+                        <td>@item.PHAStockoutpriceToday</td>
+                        <td>@item.PHANetIncomeFpToday</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="cont-FP-Calc">
+    <h3>
+        Sales Report
+    </h3>
+</div>
+
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-1">
+        <h2>Most Sold Items</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHAMostSoldItems)
+                {
+                    <tr>
+
+                        <td>@item.PHAProName</td>
+                        <td>@item.PHATotQuaSold</td>
+                        <td>@item.PHATotStockinprice</td>
+                        <td>@item.PHATotStockoutprice</td>
+                        <td>@item.PHANetIncomeFp</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="Col-FP-Calc-2">
+        <h2>Most Sold Items In The Last Day</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHAMostSoldItemsPreDay)
+                {
+                    <tr>
+
+                        <td>@item.PHAProNamePreDay</td>
+                        <td>@item.PHATotQuaSoldPreDay</td>
+                        <td>@item.PHAStockinpricePreDay</td>
+                        <td>@item.PHAStockoutpricePreDay</td>
+                        <td>@item.PHANetIncomeFpPreDay</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+</div>
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-1">
+        <h2>Most Sold Items In The Last Week</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHAMostSoldItemsPreWeek)
+                {
+                    <tr>
+
+                        <td>@item.PHAProNamePreWeek</td>
+                        <td>@item.PHATotQuaSoldPreWeek</td>
+                        <td>@item.PHAStockinpricePreWeek</td>
+                        <td>@item.PHAStockoutpricePreWeek</td>
+                        <td>@item.PHANetIncomeFpPreWeek</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="Col-FP-Calc-2">
+        <h2>Most Sold Items In The Last Two Weeks</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHAMostSoldItemsPreTwoWeeks)
+                {
+                    <tr>
+
+                        <td>@item.PHAProNamePreTwoWeeks</td>
+                        <td>@item.PHATotQuaSoldPreTwoWeeks</td>
+                        <td>@item.PHAStockinpricePreTwoWeeks</td>
+                        <td>@item.PHAStockoutpricePreTwoWeeks</td>
+                        <td>@item.PHANetIncomeFpPreTwoWeeks</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-1">
+        <h2>Most Sold Items In The Last ThreeWeeks</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHAMostSoldItemsPreThreeWeeks)
+                {
+                    <tr>
+
+                        <td>@item.PHAProNamePreThreeWeeks</td>
+                        <td>@item.PHATotQuaSoldPreThreeWeeks</td>
+                        <td>@item.PHAStockinpricePreThreeWeeks</td>
+                        <td>@item.PHAStockoutpricePreThreeWeeks</td>
+                        <td>@item.PHANetIncomeFpPreThreeWeeks</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="Col-FP-Calc-2">
+        <h2>Most Sold Items In The Last Month</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHAMostSoldItemsPreMonth)
+                {
+                    <tr>
+
+                        <td>@item.PHAProNamePreMonth</td>
+                        <td>@item.PHATotQuaSoldPreMonth</td>
+                        <td>@item.PHAStockinpricePreMonth</td>
+                        <td>@item.PHAStockoutpricePreMonth</td>
+                        <td>@item.PHANetIncomeFpPreMonth</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="cont-FP-Calc">
+
+    <h3>
+        Financial Sales Report
+    </h3>
+
+</div>
+
+<div class="cont-FP-Calc">
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+            <h3>
+                Total Quantity Sold
+            </h3>
+            <h5>
+                Today:@Model.PHATotalAmountSoldToday
+            </h5>
+
+            <h5>
+                In The Previous Day: @Model.PHATotalAmountSoldYesterday
+            </h5>
+
+            <h5>
+                In The Previous Week:@Model.PHATotalAmountSoldPastWeek
+            </h5>
+
+            <h5>
+                In The Previous Two Weeks:@Model.PHATotalAmountSoldPastTwoWeeks
+            </h5>
+
+            <h5>
+                In The Previous Three Weeks:@Model.PHATotalAmountSoldPastThreeWeeks
+            </h5>
+
+            <h5>
+                In The Previous Month:@Model.PHATotalAmountSoldPastMonth
+            </h5>
+        </ul>
+    </div>
+
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+            <h3>
+                Total Stock In Price Of Sold Items
+            </h3>
+
+            <h5>
+                Today:@Model.PHATotalStockInPriceOfItemsSoldToday
+            </h5>
+
+            <h5>
+                Previous Day:@Model.PHATotalStockInPriceOfItemsSoldYesterday
+            </h5>
+
+            <h5>
+                Previous Week:@Model.PHATotalStockInPriceOfItemsSoldLastWeek
+            </h5>
+
+            <h5>
+                Previous Two Weeks:@Model.PHATotalStockInPriceOfItemsSoldLastTwoWeeks
+            </h5>
+
+            <h5>
+                Previous Three Weeks:@Model.PHATotalStockInPriceOfItemsSoldLastThreeWeeks
+            </h5>
+
+            <h5>
+                Previous Month:@Model.PHATotalStockInPriceOfItemsSoldLastMonth
+            </h5>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="cont-FP-Calc">
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+            <h3>
+                Total Stock Out Price Of Sold Items
+            </h3>
+
+            <h5>
+                Today:@Model.PHATotalStockOutPriceOfItemsSoldToday
+            </h5>
+
+            <h5>
+                Previous Day:@Model.PHATotalStockOutPriceOfItemsSoldYesterday
+            </h5>
+
+            <h5>
+                Previous Week:@Model.PHATotalStockOutPriceOfItemsSoldLastWeek
+            </h5>
+
+            <h5>
+                Previous Two Weeks:@Model.PHATotalStockOutPriceOfItemsSoldLastTwoWeeks
+            </h5>
+
+            <h5>
+                Previous Three Weeks:@Model.PHATotalStockOutPriceOfItemsSoldLastThreeWeeks
+            </h5>
+
+            <h5>
+                Previous Month:@Model.PHATotalStockOutPriceOfItemsSoldLastMonth
+            </h5>
+        </ul>
+    </div>
+
+
+    <div class="Col-FP-Calc-0">
+        <ul>
+            <h3>
+                Total Income Of Items Sold
+            </h3>
+
+            <h5>
+                Today:@Model.PHATotalIncomeOfItemsSoldToday
+            </h5>
+
+            <h5>
+                Previous Day:@Model.PHATotalIncomeOfItemsSoldYesterday
+            </h5>
+
+            <h5>
+                Previous Week:@Model.PHATotalIncomeOfItemsSoldLastWeek
+            </h5>
+
+            <h5>
+                Previous Two Weeks:@Model.PHATotalIncomeOfItemsSoldLastTwoWeeks
+            </h5>
+
+            <h5>
+                Previous Three Weeks:@Model.PHATotalIncomeOfItemsSoldLastThreeWeeks
+            </h5>
+
+            <h5>
+                Previous Month:@Model.PHATotalIncomeOfItemsSoldLastMonth
+            </h5>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="column">
+        <div id="chart-container">
+            <canvas id="mostSoldChart"></canvas>
+        </div>
+
+    </div>
+    <div class="column">
+        <div id="chart-container2">
+            <canvas id="mostSoldChart2"></canvas>
+        </div>
+        <h2>Column 2</h2>
+        <p>Some text for column 2.</p>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<script>
+    const ctx = document.getElementById('mostSoldChart').getContext('2d');
+    const data = {
+        labels: @Html.Raw(Json.Serialize(Model.PHAMostSoldItemsPreDay.Select(x => x.PHAProNamePreDay).ToArray())),
+        datasets: [{
+            data: @Html.Raw(Json.Serialize(Model.PHAMostSoldItemsPreDay.Select(x => x.PHATotQuaSoldPreDay).ToArray())),
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(255, 159, 64, 0.8)'
+                // Add more colors as needed
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Most Sold Items Yesterday'
+                },
+                legend: {
+                    display: true,
+                    position: 'bottom' //Place legend at the bottom
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            let label = context.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.y !== null) {
+                                label += context.parsed.y + ' (' + context.parsed.percentage.toFixed(2) + '%)';
+                            }
+                            return label;
+                        }
+                    }
+                }
+
+            },
+            maintainAspectRatio: false
+        }
+    };
+
+    new Chart(ctx, config);
+
+</script>
+
+
+
+
+<h2>Transaction Summary</h2>
+
+
+<form method="post">
+    <label for="selectedDate">Select Date:</label>
+    <select id="selectedDate" name="selectedDate">
+    </select>
+    <button type="submit">Get Total</button>
+</form>
+
+<div class="cont-FP-Calc">
+
+    <h3>
+        Expired Items
+    </h3>
+
+</div>
+
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-0">
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity </th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHAItemExpired)
+                {
+                    <tr>
+
+                        <td>@item.PHAItemNameExp</td>
+                        <td>@item.PHAItemQuantityExp</td>
+                        <td>@item.PHAItemStockinpriceExp</td>
+                        <td>@item.PHAItemStockoutpriceExp</td>
+                        <td>@item.PHAItemNetIncomeExp</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="cont-FP-Calc">
+
+    <h3>
+        Sold Out Items
+    </h3>
+
+</div>
+
+
+<div class="cont-FP-Calc">
+    <div class="Col-FP-Calc-0">
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Total Quantity </th>
+                    <th>Total Stock In Price </th>
+                    <th>Total Stock Out Price</th>
+                    <th>TotalProfit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PHAvarSoldOutItems)
+                {
+                    <tr>
+
+                        <td>@item.PHAItemNameSoldout</td>
+                        <td>@item.PHAItemQuantitySoldout</td>
+                        <td>@item.PHAItemStockinpriceSoldout</td>
+                        <td>@item.PHAItemStockoutpriceSoldout</td>
+                        <td>@item.PHAItemNetIncomeSoldout</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

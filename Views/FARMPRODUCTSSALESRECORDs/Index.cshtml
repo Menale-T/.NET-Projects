@@ -1,0 +1,83 @@
+﻿@model IEnumerable<SUP_INV1._0.Models.FARMPRODUCTSSALESRECORD>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FPRecID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FPRecName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FPRecSoldAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FPRecDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FPRecStockInPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FPRecStockOutPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FPRecDateSold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FPRecSupplierEmail)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+             <td>
+                @Html.DisplayFor(modelItem => item.FPRecID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FPRecName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FPRecSoldAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FPRecDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FPRecStockInPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FPRecStockOutPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FPRecDateSold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FPRecSupplierEmail)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FPRecID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FPRecID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FPRecID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
