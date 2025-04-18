@@ -1,0 +1,229 @@
+﻿{
+  "Scenario": "Forecasting",
+  "DataSource": {
+    "Type": "SQL",
+    "Version": 1,
+    "ColumnProperties": [
+      {
+        "ColumnName": "RecID",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "ItemID",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RecName",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Category",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RecSoldAmountQuantity",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RecDescription",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RecSt_InPrice",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RecSt_OutPrice",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RecDateSold",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RecSupplierEmail",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ],
+    "ConnectionString": "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\user\\aspnet-SUP_INV1._0-a9903174-c702-4653-8ddd-431e10eb02b2.mdf;Integrated Security=True;Connect Timeout=30",
+    "CommandString": "SELECT CAST([RecID] as REAL), CAST([ItemID] as REAL), CAST([RecName] as NVARCHAR(MAX)), CAST([Category] as REAL), CAST([RecSoldAmountQuantity] as REAL), CAST([RecDescription] as NVARCHAR(MAX)), CAST([RecSt_InPrice] as REAL), CAST([RecSt_OutPrice] as REAL), [RecDateSold], CAST([RecSupplierEmail] as NVARCHAR(MAX)) FROM [dbo].[PREPAREDRECORD]",
+    "DatabaseName": "aspnet-SUP_INV1._0-a9903174-c702-4653-8ddd-431e10eb02b2",
+    "SelectedTableDbo": "dbo",
+    "TableName": "PREPAREDRECORD"
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 96.257091013525525,
+        "RuntimeInSeconds": 0.006,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 3,
+            "SeriesLength": 12,
+            "TrainSize": 12,
+            "Horizon": 10,
+            "OutputColumnName": "RecSoldAmountQuantity",
+            "InputColumnName": "RecSoldAmountQuantity",
+            "ConfidenceLowerBoundColumn": "RecSoldAmountQuantity_LB",
+            "ConfidenceUpperBoundColumn": "RecSoldAmountQuantity_UB"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 96.257091013525525,
+        "RuntimeInSeconds": 0.005,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 3,
+            "SeriesLength": 7,
+            "TrainSize": 12,
+            "Horizon": 10,
+            "OutputColumnName": "RecSoldAmountQuantity",
+            "InputColumnName": "RecSoldAmountQuantity",
+            "ConfidenceLowerBoundColumn": "RecSoldAmountQuantity_LB",
+            "ConfidenceUpperBoundColumn": "RecSoldAmountQuantity_UB"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 96.257091013525525,
+        "RuntimeInSeconds": 0.005,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 3,
+            "SeriesLength": 6,
+            "TrainSize": 12,
+            "Horizon": 10,
+            "OutputColumnName": "RecSoldAmountQuantity",
+            "InputColumnName": "RecSoldAmountQuantity",
+            "ConfidenceLowerBoundColumn": "RecSoldAmountQuantity_LB",
+            "ConfidenceUpperBoundColumn": "RecSoldAmountQuantity_UB"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 96.257091013525525,
+        "RuntimeInSeconds": 0.009,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 3,
+            "SeriesLength": 35,
+            "TrainSize": 12,
+            "Horizon": 10,
+            "OutputColumnName": "RecSoldAmountQuantity",
+            "InputColumnName": "RecSoldAmountQuantity",
+            "ConfidenceLowerBoundColumn": "RecSoldAmountQuantity_LB",
+            "ConfidenceUpperBoundColumn": "RecSoldAmountQuantity_UB"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 96.257091013525525,
+        "RuntimeInSeconds": 0.003,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 3,
+            "SeriesLength": 14,
+            "TrainSize": 12,
+            "Horizon": 10,
+            "OutputColumnName": "RecSoldAmountQuantity",
+            "InputColumnName": "RecSoldAmountQuantity",
+            "ConfidenceLowerBoundColumn": "RecSoldAmountQuantity_LB",
+            "ConfidenceUpperBoundColumn": "RecSoldAmountQuantity_UB"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ForecastBySsa"
+    },
+    "Schema": "e0",
+    "MetricName": "RMSE",
+    "ModelFilePath": "C:\\Users\\user\\source\\repos\\SUP-INV1.0\\SUP-INV1.0\\DemandPred.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 3,
+    "OptimizeMetric": "RMSE",
+    "Subsampling": false,
+    "Type": "ForecastingTrainingOption",
+    "TrainingTime": 60,
+    "UseCrossValidation": false,
+    "Horizon": 10,
+    "TimeColumn": "RecDateSold",
+    "LabelColumn": "RecSoldAmountQuantity",
+    "UseDefaultIndex": false,
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
